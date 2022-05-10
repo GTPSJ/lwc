@@ -1,0 +1,8 @@
+h1{
+    color:crimson;
+}
+
+.dados{
+    margin: 10px;
+    background: linear-gradient( to right, rgba(179, 241, 233, 0.493),rgba(166, 220, 223, 0.63),rgba(141, 185, 199, 0.452),rgb(145, 229, 235),rgb(236, 248, 250),rgb(133, 235, 235),rgb(192, 233, 235)) ;
+}
