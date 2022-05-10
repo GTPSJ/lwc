@@ -2,7 +2,7 @@
 	
 	<lightning-card>
 
-		<div class="slds-m-around_medium">
+		<div class="slds-m-around_medium" if:true={visible}>
 		<h1  class="slds-text-heading_large">
 			Olá Gleiser
 		</h1>
@@ -32,13 +32,19 @@
 			</p>
 
 	</div>
+	<lightning-button variant="brand" label="Trocar div" title="alterar visual"
+			  onclick={trocarDiv} class="slds-m-left_x-small"></lightning-button>
 
-	<div class = "dados"> 
+	<div class = "dados" if:true={visible}> 
 			<h1> Outros dados</h1>
 			<p> Email: {Email} </p>
-			<p > Instagram: <a href={instagram}> @gleiser_tarine </a></p>
-			<p> Linkedin: <a href={linkedin}> @gleiser_tarine </a></p>
+			<p > Instagram: <a href={instagram} target="_blank"> @gleiser_tarine </a></p>
+			<p> Linkedin: <a href={linkedin} target="_blank"> @gleiser_tarine </a></p>
 	</div>
+
+	<lightning-button variant="brand" label="Alterar Valores" title="alterar valores"
+			  onclick={alterarValores} class="slds-m-left_x-small"></lightning-button>
+  
 	</lightning-card>	
 
 </template>
